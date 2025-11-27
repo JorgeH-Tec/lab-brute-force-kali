@@ -5,7 +5,7 @@
 ![Medusa](https://img.shields.io/badge/Tool-Medusa-red?style=for-the-badge)
 
 > **Desafio de Projeto:** Simulando um Ataque de Brute Force de Senhas  
-> **Bootcamp:** Cibersegurança - Santander Open Academy | **DIO** > **Orientadora:** Isadora Ferrão, PhD
+> **Bootcamp:** Cibersegurança - Santander Open Academy | **DIO** > **Orientadora:** Isadora Ferrão
 
 ---
 
@@ -32,7 +32,7 @@ Este repositório documenta a execução de um laboratório prático de **Segura
 
 | Recurso | Descrição |
 | :--- | :--- |
-| **VirtualBox** | Hypervisor para criar o laboratório virtual isolado. |
+| **VirtualBox** | Criar um laboratório virtual isolado. |
 | **Kali Linux** | Sistema Operacional do Atacante (IP: `192.168.56.102`). |
 | **Metasploitable 2** | Máquina Vítima, intencionalmente vulnerável (IP: `192.168.56.101`). |
 | **Medusa** | Ferramenta principal de força bruta modular e paralela. |
@@ -113,7 +113,7 @@ medusa -h 192.168.56.101 -U users.txt -P pass.txt -M http \
 
 ### Fase 3: Enumeração e Ataque SMB (Portas 139/445)
 
-Nesta fase, avançamos para uma técnica mais sofisticada: primeiro enumeramos os usuários reais do sistema e depois focamos o ataque neles (Password Spraying).
+Nesta fase, avançamos para uma técnica mais sofisticada: primeiro enumeramos os usuários reais do sistema e depois focamos o ataque neles.
 
 **1. Enumeração de Usuários (Enum4Linux):**
 Utilizamos o `enum4linux` para extrair informações do alvo e salvamos a saída.
